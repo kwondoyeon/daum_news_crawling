@@ -75,7 +75,7 @@ board = driver.find_element_by_xpath('//*[@id="mainContent"]/div/div[1]/div[2]/d
 time.sleep(2)
 
 title = driver.find_element_by_xpath('//*[@id="boardTitle"]').click()
-title1 = '데일리 뉴스 캐치 ' +datetime.today().strftime('%m')+'월'+datetime.today().strftime('%d')+'일  '+datetime.today().strftime('%H')+'시'
+title1 = '이시각 가장 많이 본 뉴스 ' +datetime.today().strftime('%m')+'월'+datetime.today().strftime('%d')+'일  '+datetime.today().strftime('%H')+'시'
 driver.find_element_by_xpath('//*[@id="boardTitle"]').send_keys(title1)
 
 explain = driver.find_element_by_xpath('//*[@id="boardCmt"]').click()
@@ -95,7 +95,7 @@ time.sleep(2)
 news1_click = driver.find_element_by_xpath('//*[@id="mainContent"]/div[2]/div/div[2]/div[3]/form/div[2]/ul/li/div[3]').click()
 time.sleep(2)
 
-li = 1
+li = 2
 for li in range(10) :
     #2번 뉴스
     news_clear = driver.find_element_by_xpath('//*[@id="mainContent"]/div[2]/div/div[2]/div[3]/form/div[1]/div/div/button[1]').click()
@@ -149,7 +149,7 @@ board = driver.find_element_by_xpath('//*[@id="mainContent"]/div[1]/div/a').clic
 time.sleep(2)
 
 title = driver.find_element_by_xpath('//*[@id="boardTitle"]').click()
-title1 = '데일리 연예뉴스 캐치 ' +datetime.today().strftime('%m')+'월'+datetime.today().strftime('%d')+'일  '+datetime.today().strftime('%H')+'시'
+title1 = '이시각 가장 많이 본 연예뉴스 ' +datetime.today().strftime('%m')+'월'+datetime.today().strftime('%d')+'일  '+datetime.today().strftime('%H')+'시'
 driver.find_element_by_xpath('//*[@id="boardTitle"]').send_keys(title1)
 
 explain = driver.find_element_by_xpath('//*[@id="boardCmt"]').click()
@@ -170,7 +170,7 @@ news1_click = driver.find_element_by_xpath('//*[@id="mainContent"]/div[2]/div/di
 time.sleep(2)
 
 
-li = 1
+li = 2
 for li in range(10) :
     #2번 뉴스
     news_clear = driver.find_element_by_xpath('//*[@id="mainContent"]/div[2]/div/div[2]/div[3]/form/div[1]/div/div/button[1]').click()
@@ -216,7 +216,7 @@ board = driver.find_element_by_xpath('//*[@id="mainContent"]/div[1]/div/a').clic
 time.sleep(2)
 
 title = driver.find_element_by_xpath('//*[@id="boardTitle"]').click()
-title1 = '데일리 경제 뉴스 캐치 ' +datetime.today().strftime('%m')+'월'+datetime.today().strftime('%d')+'일  '+datetime.today().strftime('%H')+'시'
+title1 = '이시각 가장 많이 본 경제 뉴스' +datetime.today().strftime('%m')+'월'+datetime.today().strftime('%d')+'일  '+datetime.today().strftime('%H')+'시'
 driver.find_element_by_xpath('//*[@id="boardTitle"]').send_keys(title1)
 
 explain = driver.find_element_by_xpath('//*[@id="boardCmt"]').click()
