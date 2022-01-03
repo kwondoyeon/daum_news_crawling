@@ -14,6 +14,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 url = 'https://news.daum.net/ranking/kkomkkom/'
 url1 = 'https://news.daum.net/ranking/kkomkkom/entertain'
 url2 = 'https://news.daum.net/economic#1'
+url3 = "https://partners.coupang.com/#affiliate/ws/link"
 
 
 lists=[]
@@ -225,15 +226,6 @@ driver.find_element_by_xpath('//*[@id="boardCmt"]').send_keys('매일매일 가�
 news_link = driver.find_element_by_xpath('//*[@id="mainContent"]/div[2]/div/div[2]/div[2]/ul/li[2]/a').click()
 time.sleep(1)
 
-# add_link = driver.find_element_by_xpath('//*[@id="mainContent"]/div[2]/div/div[2]/div[3]/form/div[1]/div/input').click()
-# driver.find_element_by_xpath('//*[@id="mainContent"]/div[2]/div/div[2]/div[3]/form/div[1]/div/input').send_keys(economic_list[0])
-# time.sleep(1)
-#
-# news1_search = driver.find_element_by_xpath('//*[@id="mainContent"]/div[2]/div/div[2]/div[3]/form/div[1]/div/div/button[2]').click()
-# time.sleep(2)
-# news1_click = driver.find_element_by_xpath('//*[@id="mainContent"]/div[2]/div/div[2]/div[3]/form/div[2]/ul/li/div[3]').click()
-# time.sleep(2)
-
 
 li = 1
 for li in range(6) :
@@ -259,6 +251,9 @@ category2 = driver.find_element_by_xpath('//*[@id="layer"]/div/div/div[2]/div/di
 time.sleep(1)
 excute2 = driver.find_element_by_xpath('//*[@id="layer"]/div/div/div[2]/div/div[5]/button[2]').click()
 confirm = driver.find_element_by_xpath('//*[@id="layer"]/div/div/div[3]/div/button').click()
+
+
+
 
 
 time.sleep(3600)
